@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #181818;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: c7c7c7;
+    border-radius: 1rem;
+}
+
+.recommended-videos-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .recommended-videos-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .recommended-videos-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .recommended-videos-scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .recommended-videos-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .recommended-videos-scroll img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .recommended-videos-scroll p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .watch-card {
+    width: 120px;
+    text-align: center;
+  }
+  
+  .watch-card a {
+    text-decoration: none;
+  }
+  
